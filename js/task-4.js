@@ -1,8 +1,8 @@
 const getTotalBalanceByGender = (users, gender) =>
  users = clients 
 .filter(client => client.gender === gender)
-.reduce((total,client)=>{
-    return total + client.balance;
+.reduce((acc,el)=>{
+    return acc + el.balance;
 },0);
 
 const clients = [
